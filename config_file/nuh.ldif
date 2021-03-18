@@ -1,0 +1,15 @@
+# cat nuh.ldif
+dn: uid=nuh,dc=elvan,dc=local
+objectClass: top
+objectClass: account
+objectClass: posixAccount
+objectClass: shadowAccount
+cn: nuh
+uid: nuh
+uidNumber: 1071
+gidNumber: 1081
+homeDirectory: /home/nuh
+loginShell: /bin/bash
+gecos: nuh
+userPassword: 1081
+

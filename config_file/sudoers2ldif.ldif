@@ -1,0 +1,26 @@
+dn: cn=defaults,ou=SUDOers,dc=elvan,dc=local
+objectClass: top
+objectClass: sudoRole
+cn: defaults
+description: SUDO via LDAP
+sudoOption: !visiblepw
+sudoOption: always_set_home
+sudoOption: match_group_by_gid
+sudoOption: always_query_group_plugin
+sudoOption: env_reset
+sudoOption: env_keep =  "COLORS DISPLAY HOSTNAME HISTSIZE KDEDIR LS_COLORS"
+sudoOption: env_keep += "MAIL PS1 PS2 QTDIR USERNAME LANG LC_ADDRESS LC_CTYPE"
+sudoOption: env_keep += "LC_COLLATE LC_IDENTIFICATION LC_MEASUREMENT LC_MESSAGES"
+sudoOption: env_keep += "LC_MONETARY LC_NAME LC_NUMERIC LC_PAPER LC_TELEPHONE"
+sudoOption: env_keep += "LC_TIME LC_ALL LANGUAGE LINGUAS _XKB_CHARSET XAUTHORITY"
+sudoOption: env_keep+=SSH_AUTH_SOCK
+sudoOption: secure_path = /sbin:/bin:/usr/sbin:/usr/bin
+
+dn: cn=sudo,ou=SUDOers,dc=elvan,dc=local
+objectClass: top
+objectClass: sudoRole
+cn: sudo
+sudoUser: nuh
+sudoHost: ALL
+sudoRunAsUser: ALL
+sudoCommand: ALL

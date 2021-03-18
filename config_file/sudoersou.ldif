@@ -1,0 +1,4 @@
+dn: ou=SUDOers,dc=elvan,dc=local
+objectclass: organizationalunit
+ou: SUDOers
+description: Elvan ile SUDOers'e doğru...

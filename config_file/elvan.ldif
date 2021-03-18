@@ -1,0 +1,14 @@
+# cat elvan.ldif
+dn: uid=elvan,dc=elvan,dc=local
+objectClass: top
+objectClass: account
+objectClass: posixAccount
+objectClass: shadowAccount
+cn: elvan
+uid: elvan
+uidNumber: 10711
+gidNumber: 10811
+homeDirectory: /home/elvan
+loginShell: /bin/bash
+userPassword: 1234
+
